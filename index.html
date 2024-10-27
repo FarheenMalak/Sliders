@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Sliders</title>
+</head>
+<body>
+    <div class="mainHeader">Sliders Categories</div>
+
+    <!-- Slider 1: Fade Image Slider -->
+    <div id="slider1">
+        <div class="slider-heading">Fade Image Slider</div>
+        <div class="fade-slider">
+            <img src="images/slide1img1.jpg" class="fade-slide active" alt="Image 1">
+            <img src="images/slider1img2.jfif" class="fade-slide" alt="Image 2">
+            <img src="images/slider1img3.jfif" class="fade-slide" alt="Image 3">
+        </div>
+    </div>
+
+    <!-- Slider 2: Horizontal Image Slider -->
+    <div id="slider2">
+        <div class="slider-heading">Horizontal Image Slider</div>
+        <div class="image-slider">
+            <button id="prevBtn">❮</button>
+            <div class="slides">
+                <img src="images/slider2img1.jfif" class="slide" alt="Image 1">
+                <img src="images/slider2img2.jfif" class="slide" alt="Image 2">
+                <img src="images/slider2img3.jfif" class="slide" alt="Image 3">
+            </div>
+            <button id="nextBtn">❯</button>
+        </div>
+    </div>
+
+    <!-- Slider 3: Number Carousel -->
+    <div id="slider3">
+        <div class="slider-heading">Number Carousel</div>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-slide">1</div>
+                <div class="carousel-slide">2</div>
+                <div class="carousel-slide">3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider 4: Auto-Scroll Image Slider -->
+    <div id="slider4">
+        <div class="slider-heading">Auto-Scroll Image Slider</div>
+        <div class="auto-slider">
+            <div class="auto-track">
+                <img src="images/img1.webp" class="auto-slide" alt="Image 1">
+                <img src="images/img4.jpg" class="auto-slide" alt="Image 4">
+                <img src="images/img2.jpg" class="auto-slide" alt="Image 2">
+                <img src="images/img6.jpg" class="auto-slide" alt="Image 6">
+                <img src="images/img3.avif" class="auto-slide" alt="Image 3">
+                <img src="images/img5.jfif" class="auto-slide" alt="Image 5">
+                <img src="images/img1.webp" class="auto-slide" alt="Image 1">
+                <img src="images/img2.jpg" class="auto-slide" alt="Image 2">
+            </div>
+        </div>
+    </div>
+
+    <div id="slider5">
+        <div class="slider-heading">Vertical Slider</div>
+        <div class="vertical-my">
+            <div class="vertical-slider">
+                <div class="vertical-track" id="verticalTrack">
+                    <div class="vertical-slide">Slide 1</div>
+                    <div class="vertical-slide">Slide 2</div>
+                    <div class="vertical-slide">Slide 3</div>
+                </div>
+            </div>
+            <button onclick="nextVerticalSlide()" id="next" class="slide5btn">Next</button>
+            <button onclick="prevVerticalSlide()" id="prev" class="slide5btn">Prev</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
